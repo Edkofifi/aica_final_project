@@ -298,7 +298,7 @@ def _parse_optional_ts(value):
     try:
         from datetime import datetime
         if isinstance(value, str):
-            # Open-Meteo format: '2025-06-01T06:10'
+            # Open-Meteo format: '2025-12-01T06:10'
             return datetime.fromisoformat(value)
         return value
     except (ValueError, TypeError):
