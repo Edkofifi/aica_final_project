@@ -1,0 +1,5 @@
+location_id,location_name,city,country,latitude,longitude,timezone
+1,Accra,Accra,Ghana,5.6037,-0.1870,Africa/Accra
+2,Kumasi,Kumasi,Ghana,6.6885,-1.6244,Africa/Accra
+3,London,London,UK,51.5074,-0.1278,Europe/London
+4,Lagos,Lagos,Nigeria,6.5244,3.3792,Africa/Lagos
