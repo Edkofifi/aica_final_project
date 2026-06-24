@@ -1,0 +1,4 @@
+.env
+README.md 
+docs/
+weather_pipeline.db

@@ -1,0 +1,1440 @@
+2026-06-22 02:03:35 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-21 → 2026-06-21
+2026-06-22 02:03:35 | ERROR    | pipeline.extract | [Accra] HTTP 403: 403 Client Error: Forbidden for url: https://api.open-meteo.com/v1/forecast?latitude=5.6037&longitude=-0.187&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Africa%2FAccra&start_date=2026-06-21&end_date=2026-06-21
+2026-06-22 02:03:35 | ERROR    | pipeline.extract | ✗ Failed to extract 'Accra': 403 Client Error: Forbidden for url: https://api.open-meteo.com/v1/forecast?latitude=5.6037&longitude=-0.187&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Africa%2FAccra&start_date=2026-06-21&end_date=2026-06-21
+2026-06-22 02:03:35 | ERROR    | pipeline.extract | [Kumasi] HTTP 403: 403 Client Error: Forbidden for url: https://api.open-meteo.com/v1/forecast?latitude=6.6885&longitude=-1.6244&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Africa%2FAccra&start_date=2026-06-21&end_date=2026-06-21
+2026-06-22 02:03:35 | ERROR    | pipeline.extract | ✗ Failed to extract 'Kumasi': 403 Client Error: Forbidden for url: https://api.open-meteo.com/v1/forecast?latitude=6.6885&longitude=-1.6244&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Africa%2FAccra&start_date=2026-06-21&end_date=2026-06-21
+2026-06-22 02:03:35 | ERROR    | pipeline.extract | [London] HTTP 403: 403 Client Error: Forbidden for url: https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Europe%2FLondon&start_date=2026-06-21&end_date=2026-06-21
+2026-06-22 02:03:35 | ERROR    | pipeline.extract | ✗ Failed to extract 'London': 403 Client Error: Forbidden for url: https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Europe%2FLondon&start_date=2026-06-21&end_date=2026-06-21
+2026-06-22 02:03:35 | ERROR    | pipeline.extract | [Lagos] HTTP 403: 403 Client Error: Forbidden for url: https://api.open-meteo.com/v1/forecast?latitude=6.5244&longitude=3.3792&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Africa%2FLagos&start_date=2026-06-21&end_date=2026-06-21
+2026-06-22 02:03:35 | ERROR    | pipeline.extract | ✗ Failed to extract 'Lagos': 403 Client Error: Forbidden for url: https://api.open-meteo.com/v1/forecast?latitude=6.5244&longitude=3.3792&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Africa%2FLagos&start_date=2026-06-21&end_date=2026-06-21
+2026-06-22 02:03:35 | INFO     | pipeline.extract | Extraction complete | 0/4 succeeded
+2026-06-22 02:05:01 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:05:01 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:05:01 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:05:01 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:05:01 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:06:17 | INFO     | utils.db_connection | Database engine created: sqlite:////home/claude/weather_pipeline/weather_pipeline.db
+2026-06-22 02:06:29 | INFO     | utils.db_connection | Database engine created: sqlite:////home/claude/weather_pipeline/weather_pipeline.db
+2026-06-22 02:06:49 | INFO     | utils.db_connection | Database engine created: sqlite:////home/claude/weather_pipeline/weather_pipeline.db
+2026-06-22 02:06:49 | INFO     | pipeline.load | Schema created / verified.
+2026-06-22 02:06:49 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-22 02:06:49 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-22 02:06:49 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-22 → 2027-06-22).
+2026-06-22 02:06:49 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:06:49 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:06:49 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:06:49 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:06:49 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:06:49 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:06:49 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-22 02:06:49 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:06:49 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-22 02:06:49 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:06:49 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-22 02:06:49 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:06:49 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:06:49 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:06:49 | INFO     | pipeline.validate | Validation passed — 28 rows cleared for loading.
+2026-06-22 02:06:49 | INFO     | pipeline.load | fact_weather: 28/28 rows inserted.
+2026-06-22 02:09:02 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 1: timeout
+2026-06-22 02:09:02 | INFO     | pipeline.extract | [Accra] Retrying in 2s …
+2026-06-22 02:09:04 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 2: timeout
+2026-06-22 02:09:04 | INFO     | pipeline.extract | [Accra] Retrying in 4s …
+2026-06-22 02:09:08 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 3: timeout
+2026-06-22 02:09:08 | ERROR    | pipeline.extract | [Accra] HTTP 403: 
+2026-06-22 02:09:08 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-21 → 2026-06-21
+2026-06-22 02:09:08 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-22 02:09:08 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-22 02:09:08 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-22 02:09:08 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-22 02:09:08 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-22 02:09:08 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-21 → 2026-06-21
+2026-06-22 02:09:08 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-22 02:09:08 | ERROR    | pipeline.extract | ✗ Failed to extract 'Kumasi': Network unreachable
+2026-06-22 02:09:08 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-22 02:09:08 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-22 02:09:08 | INFO     | pipeline.extract | Extraction complete | 3/4 succeeded
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:08 | INFO     | pipeline.transform | T4 missing value fills: precipitation_mm: 1 NaN → 0.0
+2026-06-22 02:09:08 | INFO     | pipeline.transform | T4 missing value fills: temp_max_c: 1 NaN → median (33.1)
+2026-06-22 02:09:08 | WARNING  | pipeline.transform | T5: Dropped 1 duplicate rows
+2026-06-22 02:09:08 | WARNING  | pipeline.transform | T6: 1 suspect rows flagged
+2026-06-22 02:09:08 | WARNING  | pipeline.transform | T6: 1 suspect rows flagged
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:08 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:08 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:09:08 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-22 02:09:08 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:09:08 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-22 02:09:08 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:09:08 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-22 02:09:08 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:09:08 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:09:08 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:09:08 | INFO     | pipeline.validate | Validation passed — 28 rows cleared for loading.
+2026-06-22 02:09:08 | INFO     | pipeline.validate |   [FAIL] Empty DataFrame: DataFrame is empty
+2026-06-22 02:09:08 | INFO     | pipeline.validate |   [FAIL] Required columns: Missing: ['date', 'location_name', 'temp_max_c', 'temp_min_c', 'precipitation_mm', 'windspeed_max_kmh', 'weathercode']
+2026-06-22 02:09:08 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:09 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:09:09 | INFO     | pipeline.validate |   [FAIL] Required columns: Missing: ['temp_max_c']
+2026-06-22 02:09:09 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:09 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:09:09 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-22 02:09:09 | INFO     | pipeline.validate |   [FAIL] No null critical cols: Nulls in critical columns: {'temp_max_c': 1}
+2026-06-22 02:09:09 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-22 02:09:09 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:09:09 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-22 02:09:09 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:09:09 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:09:09 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:09:09 | ERROR    | pipeline.validate | Data quality CRITICAL failures:
+  • No null critical cols: Nulls in critical columns: {'temp_max_c': 1}
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:09 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:10 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:33 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 1: timeout
+2026-06-22 02:09:33 | INFO     | pipeline.extract | [Accra] Retrying in 2s …
+2026-06-22 02:09:35 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 2: timeout
+2026-06-22 02:09:35 | INFO     | pipeline.extract | [Accra] Retrying in 4s …
+2026-06-22 02:09:39 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 3: timeout
+2026-06-22 02:09:39 | ERROR    | pipeline.extract | [Accra] HTTP 403: 
+2026-06-22 02:09:39 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-21 → 2026-06-21
+2026-06-22 02:09:39 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-22 02:09:39 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-22 02:09:39 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-22 02:09:39 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-22 02:09:39 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-22 02:09:39 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-21 → 2026-06-21
+2026-06-22 02:09:39 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-22 02:09:39 | ERROR    | pipeline.extract | ✗ Failed to extract 'Kumasi': Network unreachable
+2026-06-22 02:09:39 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-22 02:09:39 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-22 02:09:39 | INFO     | pipeline.extract | Extraction complete | 3/4 succeeded
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:39 | INFO     | pipeline.transform | T4 missing value fills: precipitation_mm: 1 NaN → 0.0
+2026-06-22 02:09:39 | INFO     | pipeline.transform | T4 missing value fills: temp_max_c: 1 NaN → median (33.1)
+2026-06-22 02:09:39 | WARNING  | pipeline.transform | T5: Dropped 1 duplicate rows
+2026-06-22 02:09:39 | WARNING  | pipeline.transform | T6: 1 suspect rows flagged
+2026-06-22 02:09:39 | WARNING  | pipeline.transform | T6: 1 suspect rows flagged
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:09:39 | INFO     | pipeline.validate | Validation passed — 28 rows cleared for loading.
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [FAIL] Empty DataFrame: DataFrame is empty
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [FAIL] Required columns: Missing: ['date', 'location_name', 'temp_max_c', 'temp_min_c', 'precipitation_mm', 'windspeed_max_kmh', 'weathercode']
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Temperature range: Skipped (columns not present)
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: Skipped (column not present)
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: Skipped (columns not present)
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [WARN] Row count reasonable: 0 rows (min expected: 1)
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [FAIL] Required columns: Missing: ['temp_max_c']
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Temperature range: Skipped (columns not present)
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: Skipped (columns not present)
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:09:39 | ERROR    | pipeline.validate | Data quality CRITICAL failures:
+  • Required columns: Missing: ['temp_max_c']
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [FAIL] No null critical cols: Nulls in critical columns: {'temp_max_c': 1}
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:09:39 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:09:39 | ERROR    | pipeline.validate | Data quality CRITICAL failures:
+  • No null critical cols: Nulls in critical columns: {'temp_max_c': 1}
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:39 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:39 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:40 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:53 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 1: timeout
+2026-06-22 02:09:53 | INFO     | pipeline.extract | [Accra] Retrying in 2s …
+2026-06-22 02:09:55 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 2: timeout
+2026-06-22 02:09:55 | INFO     | pipeline.extract | [Accra] Retrying in 4s …
+2026-06-22 02:09:59 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 3: timeout
+2026-06-22 02:09:59 | ERROR    | pipeline.extract | [Accra] HTTP 403: 
+2026-06-22 02:09:59 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-21 → 2026-06-21
+2026-06-22 02:09:59 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-22 02:09:59 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-22 02:09:59 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-22 02:09:59 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-22 02:09:59 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-22 02:09:59 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-21 → 2026-06-21
+2026-06-22 02:09:59 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-22 02:09:59 | ERROR    | pipeline.extract | ✗ Failed to extract 'Kumasi': Network unreachable
+2026-06-22 02:09:59 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-22 02:09:59 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-22 02:09:59 | INFO     | pipeline.extract | Extraction complete | 3/4 succeeded
+2026-06-22 02:09:59 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:09:59 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:09:59 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:09:59 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:09:59 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:09:59 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | T4 missing value fills: precipitation_mm: 1 NaN → 0.0
+2026-06-22 02:10:00 | INFO     | pipeline.transform | T4 missing value fills: temp_max_c: 1 NaN → median (33.1)
+2026-06-22 02:10:00 | WARNING  | pipeline.transform | T5: Dropped 1 duplicate rows
+2026-06-22 02:10:00 | WARNING  | pipeline.transform | T6: 1 suspect rows flagged
+2026-06-22 02:10:00 | WARNING  | pipeline.transform | T6: 1 suspect rows flagged
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:10:00 | INFO     | pipeline.validate | Validation passed — 28 rows cleared for loading.
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [FAIL] Empty DataFrame: DataFrame is empty
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [FAIL] Required columns: Missing: ['date', 'location_name', 'temp_max_c', 'temp_min_c', 'precipitation_mm', 'windspeed_max_kmh', 'weathercode']
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Temperature range: Skipped (columns not present)
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: Skipped (column not present)
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: Skipped (columns not present)
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [WARN] Row count reasonable: 0 rows (min expected: 1)
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] No future dates: Skipped (no date column or empty)
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Weathercode known: Skipped (no weathercode column or empty)
+2026-06-22 02:10:00 | WARNING  | pipeline.validate | Validation warnings: 1
+2026-06-22 02:10:00 | ERROR    | pipeline.validate | Data quality CRITICAL failures:
+  • Empty DataFrame: DataFrame is empty
+  • Required columns: Missing: ['date', 'location_name', 'temp_max_c', 'temp_min_c', 'precipitation_mm', 'windspeed_max_kmh', 'weathercode']
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [FAIL] Required columns: Missing: ['temp_max_c']
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Temperature range: Skipped (columns not present)
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: Skipped (columns not present)
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:10:00 | ERROR    | pipeline.validate | Data quality CRITICAL failures:
+  • Required columns: Missing: ['temp_max_c']
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [FAIL] No null critical cols: Nulls in critical columns: {'temp_max_c': 1}
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:10:00 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:10:00 | ERROR    | pipeline.validate | Data quality CRITICAL failures:
+  • No null critical cols: Nulls in critical columns: {'temp_max_c': 1}
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:00 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:10:01 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:10:52 | INFO     | utils.db_connection | Database engine created: sqlite:////home/claude/weather_pipeline/weather_pipeline.db
+2026-06-22 02:10:57 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 1: timeout
+2026-06-22 02:10:57 | INFO     | pipeline.extract | [Accra] Retrying in 2s …
+2026-06-22 02:10:59 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 2: timeout
+2026-06-22 02:10:59 | INFO     | pipeline.extract | [Accra] Retrying in 4s …
+2026-06-22 02:11:03 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 3: timeout
+2026-06-22 02:11:03 | ERROR    | pipeline.extract | [Accra] HTTP 403: 
+2026-06-22 02:11:03 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-21 → 2026-06-21
+2026-06-22 02:11:03 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-22 02:11:03 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-22 02:11:03 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-22 02:11:03 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-22 02:11:03 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-22 02:11:03 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-21 → 2026-06-21
+2026-06-22 02:11:03 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-22 02:11:03 | ERROR    | pipeline.extract | ✗ Failed to extract 'Kumasi': Network unreachable
+2026-06-22 02:11:03 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-22 02:11:03 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-22 02:11:03 | INFO     | pipeline.extract | Extraction complete | 3/4 succeeded
+2026-06-22 02:11:03 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:03 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:03 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:03 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:03 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:03 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:03 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:03 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | T4 missing value fills: precipitation_mm: 1 NaN → 0.0
+2026-06-22 02:11:04 | INFO     | pipeline.transform | T4 missing value fills: temp_max_c: 1 NaN → median (33.1)
+2026-06-22 02:11:04 | WARNING  | pipeline.transform | T5: Dropped 1 duplicate rows
+2026-06-22 02:11:04 | WARNING  | pipeline.transform | T6: 1 suspect rows flagged
+2026-06-22 02:11:04 | WARNING  | pipeline.transform | T6: 1 suspect rows flagged
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:11:04 | INFO     | pipeline.validate | Validation passed — 28 rows cleared for loading.
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [FAIL] Empty DataFrame: DataFrame is empty
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [FAIL] Required columns: Missing: ['date', 'location_name', 'temp_max_c', 'temp_min_c', 'precipitation_mm', 'windspeed_max_kmh', 'weathercode']
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Temperature range: Skipped (columns not present)
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: Skipped (column not present)
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: Skipped (columns not present)
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [WARN] Row count reasonable: 0 rows (min expected: 1)
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] No future dates: Skipped (no date column or empty)
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Weathercode known: Skipped (no weathercode column or empty)
+2026-06-22 02:11:04 | WARNING  | pipeline.validate | Validation warnings: 1
+2026-06-22 02:11:04 | ERROR    | pipeline.validate | Data quality CRITICAL failures:
+  • Empty DataFrame: DataFrame is empty
+  • Required columns: Missing: ['date', 'location_name', 'temp_max_c', 'temp_min_c', 'precipitation_mm', 'windspeed_max_kmh', 'weathercode']
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [FAIL] Required columns: Missing: ['temp_max_c']
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Temperature range: Skipped (columns not present)
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: Skipped (columns not present)
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:11:04 | ERROR    | pipeline.validate | Data quality CRITICAL failures:
+  • Required columns: Missing: ['temp_max_c']
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [FAIL] No null critical cols: Nulls in critical columns: {'temp_max_c': 1}
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:11:04 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:11:04 | ERROR    | pipeline.validate | Data quality CRITICAL failures:
+  • No null critical cols: Nulls in critical columns: {'temp_max_c': 1}
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:04 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:05 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:05 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:11:05 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:11:05 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:11:05 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:11:05 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:11:05 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:30 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 1: timeout
+2026-06-22 02:50:30 | INFO     | pipeline.extract | [Accra] Retrying in 2s …
+2026-06-22 02:50:32 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 2: timeout
+2026-06-22 02:50:32 | INFO     | pipeline.extract | [Accra] Retrying in 4s …
+2026-06-22 02:50:36 | WARNING  | pipeline.extract | [Accra] Connection error on attempt 3: timeout
+2026-06-22 02:50:36 | ERROR    | pipeline.extract | [Accra] HTTP 403: 
+2026-06-22 02:50:36 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-21 → 2026-06-21
+2026-06-22 02:50:36 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-22 02:50:36 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-22 02:50:36 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-22 02:50:36 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-22 02:50:36 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-22 02:50:36 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-21 → 2026-06-21
+2026-06-22 02:50:36 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-22 02:50:36 | ERROR    | pipeline.extract | ✗ Failed to extract 'Kumasi': Network unreachable
+2026-06-22 02:50:36 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-22 02:50:36 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-22 02:50:36 | INFO     | pipeline.extract | Extraction complete | 3/4 succeeded
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | T4 missing value fills: precipitation_mm: 1 NaN → 0.0
+2026-06-22 02:50:36 | INFO     | pipeline.transform | T4 missing value fills: temp_max_c: 1 NaN → median (33.1)
+2026-06-22 02:50:36 | WARNING  | pipeline.transform | T5: Dropped 1 duplicate rows
+2026-06-22 02:50:36 | WARNING  | pipeline.transform | T6: 1 suspect rows flagged
+2026-06-22 02:50:36 | WARNING  | pipeline.transform | T6: 1 suspect rows flagged
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:50:36 | INFO     | pipeline.validate | Validation passed — 28 rows cleared for loading.
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [FAIL] Empty DataFrame: DataFrame is empty
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [FAIL] Required columns: Missing: ['date', 'location_name', 'temp_max_c', 'temp_min_c', 'precipitation_mm', 'windspeed_max_kmh', 'weathercode']
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Temperature range: Skipped (columns not present)
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: Skipped (column not present)
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: Skipped (columns not present)
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [WARN] Row count reasonable: 0 rows (min expected: 1)
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] No future dates: Skipped (no date column or empty)
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Weathercode known: Skipped (no weathercode column or empty)
+2026-06-22 02:50:36 | WARNING  | pipeline.validate | Validation warnings: 1
+2026-06-22 02:50:36 | ERROR    | pipeline.validate | Data quality CRITICAL failures:
+  • Empty DataFrame: DataFrame is empty
+  • Required columns: Missing: ['date', 'location_name', 'temp_max_c', 'temp_min_c', 'precipitation_mm', 'windspeed_max_kmh', 'weathercode']
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [FAIL] Required columns: Missing: ['temp_max_c']
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Temperature range: Skipped (columns not present)
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: Skipped (columns not present)
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:50:36 | ERROR    | pipeline.validate | Data quality CRITICAL failures:
+  • Required columns: Missing: ['temp_max_c']
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 28 rows
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [FAIL] No null critical cols: Nulls in critical columns: {'temp_max_c': 1}
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 28 rows (min expected: 1)
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-22 02:50:36 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-22 02:50:36 | ERROR    | pipeline.validate | Data quality CRITICAL failures:
+  • No null critical cols: Nulls in critical columns: {'temp_max_c': 1}
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:36 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'London' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 7 rows
+2026-06-22 02:50:37 | INFO     | pipeline.transform | Transform complete | total rows: 28
+2026-06-22 04:06:32 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-22 04:06:32 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2025-06-01 → 2025-06-07
+2026-06-22 04:06:32 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-22 04:06:32 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-22 04:06:42 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-22 04:06:42 | ERROR    | utils.db_connection | Database error — rolling back: permission denied for schema public
+LINE 1: CREATE TABLE IF NOT EXISTS stg_weather_raw (
+                                   ^
+
+2026-06-23 15:30:47 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:30:47 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2025-06-01 → 2025-06-07
+2026-06-23 15:30:47 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:30:47 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-23 15:30:47 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 15:30:47 | ERROR    | utils.db_connection | Database error — rolling back: permission denied for schema public
+LINE 1: CREATE TABLE IF NOT EXISTS stg_weather_raw (
+                                   ^
+
+2026-06-23 15:38:26 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:38:26 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2025-06-01 → 2025-06-07
+2026-06-23 15:38:26 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:38:26 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-23 15:38:26 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 15:38:26 | ERROR    | utils.db_connection | Database error — rolling back: permission denied for schema public
+LINE 1: CREATE TABLE IF NOT EXISTS stg_weather_raw (
+                                   ^
+
+2026-06-23 15:38:47 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:38:47 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2025-06-01 → 2025-06-07
+2026-06-23 15:38:47 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:38:47 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-23 15:38:47 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 15:38:47 | ERROR    | utils.db_connection | Database error — rolling back: permission denied for schema public
+LINE 1: CREATE TABLE IF NOT EXISTS stg_weather_raw (
+                                   ^
+
+2026-06-23 15:39:02 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:39:02 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2025-06-01 → 2025-06-07
+2026-06-23 15:39:02 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:39:02 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-23 15:39:02 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 15:39:02 | ERROR    | utils.db_connection | Database error — rolling back: permission denied for schema public
+LINE 1: CREATE TABLE IF NOT EXISTS stg_weather_raw (
+                                   ^
+
+2026-06-23 15:39:19 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:39:19 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2025-06-01 → 2025-06-07
+2026-06-23 15:39:19 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:39:19 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-23 15:39:19 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 15:39:19 | ERROR    | utils.db_connection | Database error — rolling back: permission denied for schema public
+LINE 1: CREATE TABLE IF NOT EXISTS stg_weather_raw (
+                                   ^
+
+2026-06-23 15:42:08 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:42:08 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2025-06-01 → 2025-06-07
+2026-06-23 15:42:08 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:42:08 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-23 15:42:08 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 15:42:08 | ERROR    | utils.db_connection | Database error — rolling back: permission denied for schema public
+LINE 1: CREATE TABLE IF NOT EXISTS stg_weather_raw (
+                                   ^
+
+2026-06-23 15:46:26 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:46:26 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2025-06-01 → 2025-06-07
+2026-06-23 15:46:26 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:46:26 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-23 15:46:26 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 15:46:26 | INFO     | pipeline.load | Schema created / verified.
+2026-06-23 15:46:26 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-23 15:46:26 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-23 15:46:26 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-23 → 2027-06-23).
+2026-06-23 15:46:26 | INFO     | pipeline.pipeline_class | Stage 1: Extract
+2026-06-23 15:46:26 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2025-06-01 → 2025-06-07
+2026-06-23 15:46:27 | ERROR    | pipeline.extract | [Accra] HTTP 400: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=5.6037&longitude=-0.187&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Africa%2FAccra&start_date=2025-06-01&end_date=2025-06-07
+2026-06-23 15:46:27 | ERROR    | pipeline.extract | ✗ Failed to extract 'Accra': 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=5.6037&longitude=-0.187&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Africa%2FAccra&start_date=2025-06-01&end_date=2025-06-07
+2026-06-23 15:46:27 | ERROR    | pipeline.extract | [Kumasi] HTTP 400: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=6.6885&longitude=-1.6244&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Africa%2FAccra&start_date=2025-06-01&end_date=2025-06-07
+2026-06-23 15:46:27 | ERROR    | pipeline.extract | ✗ Failed to extract 'Kumasi': 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=6.6885&longitude=-1.6244&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Africa%2FAccra&start_date=2025-06-01&end_date=2025-06-07
+2026-06-23 15:46:28 | ERROR    | pipeline.extract | [London] HTTP 400: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Europe%2FLondon&start_date=2025-06-01&end_date=2025-06-07
+2026-06-23 15:46:28 | ERROR    | pipeline.extract | ✗ Failed to extract 'London': 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=51.5074&longitude=-0.1278&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Europe%2FLondon&start_date=2025-06-01&end_date=2025-06-07
+2026-06-23 15:46:29 | ERROR    | pipeline.extract | [Lagos] HTTP 400: 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=6.5244&longitude=3.3792&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Africa%2FLagos&start_date=2025-06-01&end_date=2025-06-07
+2026-06-23 15:46:29 | ERROR    | pipeline.extract | ✗ Failed to extract 'Lagos': 400 Client Error: Bad Request for url: https://api.open-meteo.com/v1/forecast?latitude=6.5244&longitude=3.3792&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum%2Cwindspeed_10m_max%2Cweathercode%2Csunrise%2Csunset&timezone=Africa%2FLagos&start_date=2025-06-01&end_date=2025-06-07
+2026-06-23 15:46:29 | INFO     | pipeline.extract | Extraction complete | 0/4 succeeded
+2026-06-23 15:51:50 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:51:50 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2026-06-23 → 2026-06-30
+2026-06-23 15:51:50 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 15:51:50 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-23 15:51:50 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 15:51:50 | INFO     | pipeline.load | Schema created / verified.
+2026-06-23 15:51:50 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-23 15:51:50 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-23 15:51:50 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-23 → 2027-06-23).
+2026-06-23 15:51:50 | INFO     | pipeline.pipeline_class | Stage 1: Extract
+2026-06-23 15:51:50 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-23 → 2026-06-30
+2026-06-23 15:51:51 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-23 15:51:52 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-23 15:51:53 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-23 15:51:53 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-23 15:51:53 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-23 15:51:53 | INFO     | pipeline.pipeline_class | Stage 2: Transform
+2026-06-23 15:51:53 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 8 rows
+2026-06-23 15:51:53 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 8 rows
+2026-06-23 15:51:53 | INFO     | pipeline.transform | ✓ Transformed 'London' → 8 rows
+2026-06-23 15:51:53 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 8 rows
+2026-06-23 15:51:53 | INFO     | pipeline.transform | Transform complete | total rows: 32
+2026-06-23 15:51:53 | INFO     | pipeline.pipeline_class | Stage 3: Validate
+2026-06-23 15:51:53 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 32 rows
+2026-06-23 15:51:53 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-23 15:51:53 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-23 15:51:53 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-23 15:51:53 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-23 15:51:53 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-23 15:51:53 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 32 rows (min expected: 1)
+2026-06-23 15:51:53 | INFO     | pipeline.validate |   [WARN] No future dates: 28 rows with future dates
+2026-06-23 15:51:53 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-23 15:51:53 | WARNING  | pipeline.validate | Validation warnings: 1
+2026-06-23 15:51:53 | INFO     | pipeline.validate | Validation passed — 32 rows cleared for loading.
+2026-06-23 15:51:53 | INFO     | pipeline.pipeline_class | Stage 4: Load (ETL)
+2026-06-23 15:51:53 | INFO     | pipeline.load | fact_weather: 32/32 rows inserted (0 skipped).
+2026-06-23 15:51:53 | INFO     | pipeline.pipeline_class | Stage 5: ELT workflow
+2026-06-23 15:51:53 | INFO     | pipeline.load | stg_weather_raw: 32 raw rows loaded.
+2026-06-23 15:51:53 | INFO     | pipeline.load | ELT: 0 rows moved from staging → fact_weather.
+2026-06-23 15:51:53 | INFO     | pipeline.pipeline_class | Pipeline complete: {'start_date': '2026-06-23', 'end_date': '2026-06-30', 'locations': 4, 'rows_transformed': 32, 'rows_loaded_etl': 32, 'rows_loaded_elt': 0, 'status': 'success'}
+2026-06-23 20:00:10 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 20:05:17 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 20:10:28 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 20:10:44 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 20:15:50 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 23:48:00 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 23:48:22 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 23:52:37 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 23:52:37 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2026-06-22 → 2026-06-22
+2026-06-23 23:52:37 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-23 23:52:37 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-23 23:52:37 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 23:52:37 | INFO     | pipeline.load | Schema created / verified.
+2026-06-23 23:52:37 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-23 23:52:37 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-23 23:52:37 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-23 → 2027-06-23).
+2026-06-23 23:52:37 | INFO     | pipeline.pipeline_class | Stage 1: Extract
+2026-06-23 23:52:37 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-22 → 2026-06-22
+2026-06-23 23:52:39 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-23 23:52:39 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-23 23:52:41 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-23 23:52:44 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-23 23:52:44 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-23 23:52:44 | INFO     | pipeline.pipeline_class | Stage 2: Transform
+2026-06-23 23:52:44 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 1 rows
+2026-06-23 23:52:44 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 1 rows
+2026-06-23 23:52:44 | INFO     | pipeline.transform | ✓ Transformed 'London' → 1 rows
+2026-06-23 23:52:44 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 1 rows
+2026-06-23 23:52:44 | INFO     | pipeline.transform | Transform complete | total rows: 4
+2026-06-23 23:52:44 | INFO     | pipeline.pipeline_class | Stage 3: Validate
+2026-06-23 23:52:44 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 4 rows
+2026-06-23 23:52:44 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-23 23:52:44 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-23 23:52:44 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-23 23:52:44 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-23 23:52:44 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-23 23:52:44 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 4 rows (min expected: 1)
+2026-06-23 23:52:44 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-23 23:52:44 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-23 23:52:44 | INFO     | pipeline.validate | Validation passed — 4 rows cleared for loading.
+2026-06-23 23:52:44 | INFO     | pipeline.pipeline_class | Stage 4: Load (ETL)
+2026-06-23 23:52:44 | INFO     | pipeline.load | fact_weather: 4/4 rows inserted (0 skipped).
+2026-06-23 23:52:44 | INFO     | pipeline.pipeline_class | Stage 5: ELT workflow
+2026-06-23 23:52:44 | INFO     | pipeline.load | stg_weather_raw: 4 raw rows loaded.
+2026-06-23 23:52:44 | INFO     | pipeline.load | ELT: 0 rows moved from staging → fact_weather.
+2026-06-23 23:52:44 | INFO     | pipeline.pipeline_class | Pipeline complete: {'start_date': '2026-06-22', 'end_date': '2026-06-22', 'locations': 4, 'rows_transformed': 4, 'rows_loaded_etl': 4, 'rows_loaded_elt': 0, 'status': 'success'}
+2026-06-23 23:53:37 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-23 23:58:45 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 00:00:04 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 00:05:12 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 00:10:18 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 00:10:36 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 00:15:48 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 00:17:18 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 00:17:18 | INFO     | pipeline.load | Schema created / verified.
+2026-06-24 00:17:18 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-24 00:17:18 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-24 00:17:18 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-24 → 2027-06-24).
+2026-06-24 00:20:56 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 00:21:13 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 00:26:25 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 00:31:34 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 00:31:54 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 08:10:27 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 08:10:27 | INFO     | pipeline.load | Schema created / verified.
+2026-06-24 08:10:27 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-24 08:10:27 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-24 08:10:27 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-24 → 2027-06-24).
+2026-06-24 08:35:52 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 08:35:52 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2026-06-23 → 2026-06-23
+2026-06-24 08:35:52 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 08:35:52 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-24 08:35:52 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 08:35:52 | INFO     | pipeline.load | Schema created / verified.
+2026-06-24 08:35:52 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-24 08:35:52 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-24 08:35:53 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-24 → 2027-06-24).
+2026-06-24 08:35:53 | INFO     | pipeline.pipeline_class | Stage 1: Extract
+2026-06-24 08:35:53 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-23 → 2026-06-23
+2026-06-24 08:35:53 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-24 08:35:54 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-24 08:35:55 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-24 08:35:56 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-24 08:35:56 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-24 08:35:56 | INFO     | pipeline.pipeline_class | Stage 2: Transform
+2026-06-24 08:35:56 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 1 rows
+2026-06-24 08:35:56 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 1 rows
+2026-06-24 08:35:56 | INFO     | pipeline.transform | ✓ Transformed 'London' → 1 rows
+2026-06-24 08:35:56 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 1 rows
+2026-06-24 08:35:56 | INFO     | pipeline.transform | Transform complete | total rows: 4
+2026-06-24 08:35:56 | INFO     | pipeline.pipeline_class | Stage 3: Validate
+2026-06-24 08:35:56 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 4 rows
+2026-06-24 08:35:56 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-24 08:35:56 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-24 08:35:56 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-24 08:35:56 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-24 08:35:56 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-24 08:35:56 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 4 rows (min expected: 1)
+2026-06-24 08:35:56 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-24 08:35:56 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-24 08:35:56 | INFO     | pipeline.validate | Validation passed — 4 rows cleared for loading.
+2026-06-24 08:35:56 | INFO     | pipeline.pipeline_class | Stage 4: Load (ETL)
+2026-06-24 08:35:56 | INFO     | pipeline.load | fact_weather: 4/4 rows inserted (0 skipped).
+2026-06-24 08:35:56 | INFO     | pipeline.pipeline_class | Stage 5: ELT workflow
+2026-06-24 08:35:56 | INFO     | pipeline.load | stg_weather_raw: 4 raw rows loaded.
+2026-06-24 08:35:56 | INFO     | pipeline.load | ELT: 0 rows moved from staging → fact_weather.
+2026-06-24 08:35:56 | INFO     | pipeline.pipeline_class | Pipeline complete: {'start_date': '2026-06-23', 'end_date': '2026-06-23', 'locations': 4, 'rows_transformed': 4, 'rows_loaded_etl': 4, 'rows_loaded_elt': 0, 'status': 'success'}
+2026-06-24 10:26:06 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 10:26:06 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2026-06-23 → 2026-06-23
+2026-06-24 10:26:06 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 10:26:06 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-24 10:26:06 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 10:26:06 | INFO     | pipeline.load | Schema created / verified.
+2026-06-24 10:26:06 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-24 10:26:06 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-24 10:26:06 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-24 → 2027-06-24).
+2026-06-24 10:26:06 | INFO     | pipeline.pipeline_class | Stage 1: Extract
+2026-06-24 10:26:06 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-23 → 2026-06-23
+2026-06-24 10:26:07 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-24 10:26:08 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-24 10:26:09 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-24 10:26:09 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-24 10:26:09 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-24 10:26:09 | INFO     | pipeline.pipeline_class | Stage 2: Transform
+2026-06-24 10:26:09 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 1 rows
+2026-06-24 10:26:09 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 1 rows
+2026-06-24 10:26:09 | INFO     | pipeline.transform | ✓ Transformed 'London' → 1 rows
+2026-06-24 10:26:09 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 1 rows
+2026-06-24 10:26:09 | INFO     | pipeline.transform | Transform complete | total rows: 4
+2026-06-24 10:26:09 | INFO     | pipeline.pipeline_class | Stage 3: Validate
+2026-06-24 10:26:09 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 4 rows
+2026-06-24 10:26:09 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-24 10:26:09 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-24 10:26:09 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-24 10:26:09 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-24 10:26:09 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-24 10:26:09 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 4 rows (min expected: 1)
+2026-06-24 10:26:09 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-24 10:26:09 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-24 10:26:09 | INFO     | pipeline.validate | Validation passed — 4 rows cleared for loading.
+2026-06-24 10:26:09 | INFO     | pipeline.pipeline_class | Stage 4: Load (ETL)
+2026-06-24 10:26:09 | INFO     | pipeline.load | fact_weather: 4/4 rows inserted (0 skipped).
+2026-06-24 10:26:09 | INFO     | pipeline.pipeline_class | Stage 5: ELT workflow
+2026-06-24 10:26:09 | INFO     | pipeline.load | stg_weather_raw: 4 raw rows loaded.
+2026-06-24 10:26:09 | INFO     | pipeline.load | ELT: 0 rows moved from staging → fact_weather.
+2026-06-24 10:26:09 | INFO     | pipeline.pipeline_class | Pipeline complete: {'start_date': '2026-06-23', 'end_date': '2026-06-23', 'locations': 4, 'rows_transformed': 4, 'rows_loaded_etl': 4, 'rows_loaded_elt': 0, 'status': 'success'}
+2026-06-24 10:42:29 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 10:47:34 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 10:52:47 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 10:52:47 | INFO     | pipeline.load | Schema created / verified.
+2026-06-24 10:52:47 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-24 10:52:47 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-24 10:52:47 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-24 → 2027-06-24).
+2026-06-24 10:52:47 | INFO     | unusual_prefix_971aba8b885eaf7bcf90cc94ad2977072f04171f_weather_dag | Setup complete.
+2026-06-24 10:52:52 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-24 → 2026-06-24
+2026-06-24 11:53:05 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-24 → 2026-06-24
+2026-06-24 14:48:41 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-24 → 2026-06-24
+2026-06-24 15:10:57 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-24 → 2026-06-24
+2026-06-24 15:19:14 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-24 → 2026-06-24
+2026-06-24 15:49:16 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 15:49:16 | INFO     | pipeline.load | Schema created / verified.
+2026-06-24 15:49:16 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-24 15:49:16 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-24 15:49:16 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-24 → 2027-06-24).
+2026-06-24 15:49:16 | INFO     | unusual_prefix_971aba8b885eaf7bcf90cc94ad2977072f04171f_weather_dag | Setup complete.
+2026-06-24 15:49:22 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-23 → 2026-06-23
+2026-06-24 15:55:25 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-23 → 2026-06-23
+2026-06-24 16:02:00 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 16:02:00 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2026-06-23 → 2026-06-23
+2026-06-24 16:02:00 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 16:02:00 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-24 16:02:00 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 16:02:00 | INFO     | pipeline.load | Schema created / verified.
+2026-06-24 16:02:00 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-24 16:02:00 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-24 16:02:00 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-24 → 2027-06-24).
+2026-06-24 16:02:00 | INFO     | pipeline.pipeline_class | Stage 1: Extract
+2026-06-24 16:02:00 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-23 → 2026-06-23
+2026-06-24 16:02:01 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-24 16:02:02 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-24 16:02:03 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-24 16:02:03 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-24 16:02:03 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-24 16:02:03 | INFO     | pipeline.pipeline_class | Stage 2: Transform
+2026-06-24 16:02:03 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 1 rows
+2026-06-24 16:02:03 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 1 rows
+2026-06-24 16:02:03 | INFO     | pipeline.transform | ✓ Transformed 'London' → 1 rows
+2026-06-24 16:02:03 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 1 rows
+2026-06-24 16:02:03 | INFO     | pipeline.transform | Transform complete | total rows: 4
+2026-06-24 16:02:03 | INFO     | pipeline.pipeline_class | Stage 3: Validate
+2026-06-24 16:02:03 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 4 rows
+2026-06-24 16:02:03 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-24 16:02:03 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-24 16:02:03 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-24 16:02:03 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-24 16:02:03 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-24 16:02:03 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 4 rows (min expected: 1)
+2026-06-24 16:02:03 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-24 16:02:03 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-24 16:02:03 | INFO     | pipeline.validate | Validation passed — 4 rows cleared for loading.
+2026-06-24 16:02:03 | INFO     | pipeline.pipeline_class | Stage 4: Load (ETL)
+2026-06-24 16:02:03 | INFO     | pipeline.load | fact_weather: 4/4 rows inserted (0 skipped).
+2026-06-24 16:02:03 | INFO     | pipeline.pipeline_class | Stage 5: ELT workflow
+2026-06-24 16:02:03 | INFO     | pipeline.load | stg_weather_raw: 4 raw rows loaded.
+2026-06-24 16:02:04 | INFO     | pipeline.load | ELT: 0 rows moved from staging → fact_weather.
+2026-06-24 16:02:04 | INFO     | pipeline.pipeline_class | Pipeline complete: {'start_date': '2026-06-23', 'end_date': '2026-06-23', 'locations': 4, 'rows_transformed': 4, 'rows_loaded_etl': 4, 'rows_loaded_elt': 0, 'status': 'success'}
+2026-06-24 16:02:14 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 16:02:14 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2026-06-23 → 2026-06-23
+2026-06-24 16:02:14 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 16:02:14 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-24 16:02:14 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 16:02:14 | INFO     | pipeline.load | Schema created / verified.
+2026-06-24 16:02:14 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-24 16:02:14 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-24 16:02:14 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-24 → 2027-06-24).
+2026-06-24 16:02:14 | INFO     | pipeline.pipeline_class | Stage 1: Extract
+2026-06-24 16:02:14 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-23 → 2026-06-23
+2026-06-24 16:02:15 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-24 16:02:16 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-24 16:02:16 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-24 16:02:17 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-24 16:02:17 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-24 16:02:17 | INFO     | pipeline.pipeline_class | Stage 2: Transform
+2026-06-24 16:02:17 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 1 rows
+2026-06-24 16:02:17 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 1 rows
+2026-06-24 16:02:17 | INFO     | pipeline.transform | ✓ Transformed 'London' → 1 rows
+2026-06-24 16:02:17 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 1 rows
+2026-06-24 16:02:17 | INFO     | pipeline.transform | Transform complete | total rows: 4
+2026-06-24 16:02:17 | INFO     | pipeline.pipeline_class | Stage 3: Validate
+2026-06-24 16:02:17 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 4 rows
+2026-06-24 16:02:17 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-24 16:02:17 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-24 16:02:17 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-24 16:02:17 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-24 16:02:17 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-24 16:02:17 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 4 rows (min expected: 1)
+2026-06-24 16:02:17 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-24 16:02:17 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-24 16:02:17 | INFO     | pipeline.validate | Validation passed — 4 rows cleared for loading.
+2026-06-24 16:02:17 | INFO     | pipeline.pipeline_class | Stage 4: Load (ETL)
+2026-06-24 16:02:17 | INFO     | pipeline.load | fact_weather: 4/4 rows inserted (0 skipped).
+2026-06-24 16:02:17 | INFO     | pipeline.pipeline_class | Stage 5: ELT workflow
+2026-06-24 16:02:17 | INFO     | pipeline.load | stg_weather_raw: 4 raw rows loaded.
+2026-06-24 16:02:17 | INFO     | pipeline.load | ELT: 0 rows moved from staging → fact_weather.
+2026-06-24 16:02:17 | INFO     | pipeline.pipeline_class | Pipeline complete: {'start_date': '2026-06-23', 'end_date': '2026-06-23', 'locations': 4, 'rows_transformed': 4, 'rows_loaded_etl': 4, 'rows_loaded_elt': 0, 'status': 'success'}
+2026-06-24 16:02:27 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 16:02:27 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2026-06-23 → 2026-06-23
+2026-06-24 16:02:27 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 16:02:27 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-24 16:02:27 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 16:02:27 | INFO     | pipeline.load | Schema created / verified.
+2026-06-24 16:02:27 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-24 16:02:27 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-24 16:02:27 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-24 → 2027-06-24).
+2026-06-24 16:02:27 | INFO     | pipeline.pipeline_class | Stage 1: Extract
+2026-06-24 16:02:27 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-23 → 2026-06-23
+2026-06-24 16:02:28 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-24 16:02:29 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-24 16:02:29 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-24 16:02:30 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-24 16:02:30 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-24 16:02:30 | INFO     | pipeline.pipeline_class | Stage 2: Transform
+2026-06-24 16:02:30 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 1 rows
+2026-06-24 16:02:30 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 1 rows
+2026-06-24 16:02:30 | INFO     | pipeline.transform | ✓ Transformed 'London' → 1 rows
+2026-06-24 16:02:30 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 1 rows
+2026-06-24 16:02:30 | INFO     | pipeline.transform | Transform complete | total rows: 4
+2026-06-24 16:02:30 | INFO     | pipeline.pipeline_class | Stage 3: Validate
+2026-06-24 16:02:30 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 4 rows
+2026-06-24 16:02:30 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-24 16:02:30 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-24 16:02:30 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-24 16:02:30 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-24 16:02:30 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-24 16:02:30 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 4 rows (min expected: 1)
+2026-06-24 16:02:30 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-24 16:02:30 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-24 16:02:30 | INFO     | pipeline.validate | Validation passed — 4 rows cleared for loading.
+2026-06-24 16:02:30 | INFO     | pipeline.pipeline_class | Stage 4: Load (ETL)
+2026-06-24 16:02:30 | INFO     | pipeline.load | fact_weather: 4/4 rows inserted (0 skipped).
+2026-06-24 16:02:30 | INFO     | pipeline.pipeline_class | Stage 5: ELT workflow
+2026-06-24 16:02:30 | INFO     | pipeline.load | stg_weather_raw: 4 raw rows loaded.
+2026-06-24 16:02:30 | INFO     | pipeline.load | ELT: 0 rows moved from staging → fact_weather.
+2026-06-24 16:02:30 | INFO     | pipeline.pipeline_class | Pipeline complete: {'start_date': '2026-06-23', 'end_date': '2026-06-23', 'locations': 4, 'rows_transformed': 4, 'rows_loaded_etl': 4, 'rows_loaded_elt': 0, 'status': 'success'}
+2026-06-24 16:02:38 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 16:02:38 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2026-06-23 → 2026-06-23
+2026-06-24 16:02:38 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 16:02:38 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-24 16:02:39 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 16:02:39 | INFO     | pipeline.load | Schema created / verified.
+2026-06-24 16:02:39 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-24 16:02:39 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-24 16:02:39 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-24 → 2027-06-24).
+2026-06-24 16:02:39 | INFO     | pipeline.pipeline_class | Stage 1: Extract
+2026-06-24 16:02:39 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-23 → 2026-06-23
+2026-06-24 16:02:40 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-24 16:02:40 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-24 16:02:41 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-24 16:02:42 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-24 16:02:42 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-24 16:02:42 | INFO     | pipeline.pipeline_class | Stage 2: Transform
+2026-06-24 16:02:42 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 1 rows
+2026-06-24 16:02:42 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 1 rows
+2026-06-24 16:02:42 | INFO     | pipeline.transform | ✓ Transformed 'London' → 1 rows
+2026-06-24 16:02:42 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 1 rows
+2026-06-24 16:02:42 | INFO     | pipeline.transform | Transform complete | total rows: 4
+2026-06-24 16:02:42 | INFO     | pipeline.pipeline_class | Stage 3: Validate
+2026-06-24 16:02:42 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 4 rows
+2026-06-24 16:02:42 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-24 16:02:42 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-24 16:02:42 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-24 16:02:42 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-24 16:02:42 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-24 16:02:42 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 4 rows (min expected: 1)
+2026-06-24 16:02:42 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-24 16:02:42 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-24 16:02:42 | INFO     | pipeline.validate | Validation passed — 4 rows cleared for loading.
+2026-06-24 16:02:42 | INFO     | pipeline.pipeline_class | Stage 4: Load (ETL)
+2026-06-24 16:02:42 | INFO     | pipeline.load | fact_weather: 4/4 rows inserted (0 skipped).
+2026-06-24 16:02:42 | INFO     | pipeline.pipeline_class | Stage 5: ELT workflow
+2026-06-24 16:02:42 | INFO     | pipeline.load | stg_weather_raw: 4 raw rows loaded.
+2026-06-24 16:02:42 | INFO     | pipeline.load | ELT: 0 rows moved from staging → fact_weather.
+2026-06-24 16:02:42 | INFO     | pipeline.pipeline_class | Pipeline complete: {'start_date': '2026-06-23', 'end_date': '2026-06-23', 'locations': 4, 'rows_transformed': 4, 'rows_loaded_etl': 4, 'rows_loaded_elt': 0, 'status': 'success'}
+2026-06-24 16:02:51 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 16:02:51 | INFO     | pipeline.pipeline_class | WeatherPipeline starting | 2026-06-23 → 2026-06-23
+2026-06-24 16:02:51 | INFO     | pipeline.pipeline_class | ============================================================
+2026-06-24 16:02:51 | INFO     | pipeline.pipeline_class | Stage 0: Setup
+2026-06-24 16:02:51 | INFO     | utils.db_connection | Database engine created: localhost:5432/weather_db
+2026-06-24 16:02:51 | INFO     | pipeline.load | Schema created / verified.
+2026-06-24 16:02:51 | INFO     | pipeline.load | dim_condition populated with 28 WMO codes.
+2026-06-24 16:02:51 | INFO     | pipeline.load | dim_location populated with 4 locations.
+2026-06-24 16:02:51 | INFO     | pipeline.load | dim_date populated with 1096 dates (2024-06-24 → 2027-06-24).
+2026-06-24 16:02:51 | INFO     | pipeline.pipeline_class | Stage 1: Extract
+2026-06-24 16:02:51 | INFO     | pipeline.extract | Starting extraction | locations=4 | period=2026-06-23 → 2026-06-23
+2026-06-24 16:02:52 | INFO     | pipeline.extract | ✓ Extracted 'Accra'
+2026-06-24 16:02:52 | INFO     | pipeline.extract | ✓ Extracted 'Kumasi'
+2026-06-24 16:02:53 | INFO     | pipeline.extract | ✓ Extracted 'London'
+2026-06-24 16:02:54 | INFO     | pipeline.extract | ✓ Extracted 'Lagos'
+2026-06-24 16:02:54 | INFO     | pipeline.extract | Extraction complete | 4/4 succeeded
+2026-06-24 16:02:54 | INFO     | pipeline.pipeline_class | Stage 2: Transform
+2026-06-24 16:02:54 | INFO     | pipeline.transform | ✓ Transformed 'Accra' → 1 rows
+2026-06-24 16:02:54 | INFO     | pipeline.transform | ✓ Transformed 'Kumasi' → 1 rows
+2026-06-24 16:02:54 | INFO     | pipeline.transform | ✓ Transformed 'London' → 1 rows
+2026-06-24 16:02:54 | INFO     | pipeline.transform | ✓ Transformed 'Lagos' → 1 rows
+2026-06-24 16:02:54 | INFO     | pipeline.transform | Transform complete | total rows: 4
+2026-06-24 16:02:54 | INFO     | pipeline.pipeline_class | Stage 3: Validate
+2026-06-24 16:02:54 | INFO     | pipeline.validate |   [PASS] Empty DataFrame: 4 rows
+2026-06-24 16:02:54 | INFO     | pipeline.validate |   [PASS] Required columns: All required columns present
+2026-06-24 16:02:54 | INFO     | pipeline.validate |   [PASS] No null critical cols: No nulls in critical columns
+2026-06-24 16:02:54 | INFO     | pipeline.validate |   [PASS] Temperature range: All temperatures within valid range
+2026-06-24 16:02:54 | INFO     | pipeline.validate |   [PASS] Precipitation non-neg: All precipitation values non-negative
+2026-06-24 16:02:54 | INFO     | pipeline.validate |   [PASS] Max ≥ Min temp: temp_max ≥ temp_min in all rows
+2026-06-24 16:02:54 | INFO     | pipeline.validate |   [PASS] Row count reasonable: 4 rows (min expected: 1)
+2026-06-24 16:02:54 | INFO     | pipeline.validate |   [PASS] No future dates: No future dates
+2026-06-24 16:02:54 | INFO     | pipeline.validate |   [PASS] Weathercode known: All weather codes recognised
+2026-06-24 16:02:54 | INFO     | pipeline.validate | Validation passed — 4 rows cleared for loading.
+2026-06-24 16:02:54 | INFO     | pipeline.pipeline_class | Stage 4: Load (ETL)
+2026-06-24 16:02:54 | INFO     | pipeline.load | fact_weather: 4/4 rows inserted (0 skipped).
+2026-06-24 16:02:54 | INFO     | pipeline.pipeline_class | Stage 5: ELT workflow
+2026-06-24 16:02:54 | INFO     | pipeline.load | stg_weather_raw: 4 raw rows loaded.
+2026-06-24 16:02:54 | INFO     | pipeline.load | ELT: 0 rows moved from staging → fact_weather.
+2026-06-24 16:02:54 | INFO     | pipeline.pipeline_class | Pipeline complete: {'start_date': '2026-06-23', 'end_date': '2026-06-23', 'locations': 4, 'rows_transformed': 4, 'rows_loaded_etl': 4, 'rows_loaded_elt': 0, 'status': 'success'}
